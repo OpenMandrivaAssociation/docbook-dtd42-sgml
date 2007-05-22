@@ -1,6 +1,6 @@
 %define name docbook-dtd42-sgml
 %define version 1.0
-%define release %mkrel 1
+%define release %mkrel 2
 %define dtdver 4.2
 %define mltyp sgml
 %define sgmlbase %{_datadir}/sgml
@@ -13,6 +13,7 @@ Summary:    SGML document type definition for DocBook %{dtdver}
 License:    Artistic style
 URL:        http://www.oasis-open.org/docbook/
 Source:     http://www.oasis-open.org/docbook/sgml/4.2/docbook-4.2.tar.bz2
+Patch:      docbook-dtd42-sgml-1.0.catalog.patch
 Provides:   docbook-dtd-sgml
 Requires:   sgml-common >= 0.6.3-2mdk
 BuildArch:  noarch  
@@ -26,6 +27,7 @@ This is the version %{dtdver} of this DTD.
 
 %prep
 %setup -q -c
+%patch -p0
 
 %build
 
