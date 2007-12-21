@@ -17,6 +17,7 @@ Patch:      docbook-dtd42-sgml-1.0.catalog.patch
 Provides:   docbook-dtd-sgml
 Requires:   sgml-common >= 0.6.3-2mdk
 BuildArch:  noarch  
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 The DocBook Document Type Definition (DTD) describes the syntax of
