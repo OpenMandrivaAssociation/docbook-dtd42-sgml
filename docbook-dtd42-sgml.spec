@@ -1,6 +1,6 @@
 %define name docbook-dtd42-sgml
 %define version 1.0
-%define release %mkrel 2
+%define release %mkrel 3
 %define dtdver 4.2
 %define mltyp sgml
 %define sgmlbase %{_datadir}/sgml
