@@ -100,3 +100,87 @@ fi
 %{sgmlbase}/docbook/sgml-dtd-%{dtdver}
 
  
+
+
+%changelog
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 1.0-7mdv2011.0
++ Revision: 663823
+- mass rebuild
+
+* Sat Dec 04 2010 Oden Eriksson <oeriksson@mandriva.com> 1.0-6mdv2011.0
++ Revision: 609147
+- rebuild
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 1.0-5mdv2010.0
++ Revision: 428309
+- rebuild
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 1.0-4mdv2009.0
++ Revision: 266571
+- rebuild early 2009.0 package (before pixel changes)
+
+* Sat May 24 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.0-3mdv2009.0
++ Revision: 210926
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue May 22 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.0-2mdv2008.0
++ Revision: 29882
+- patch catalog for ignoring ISO entity sets, as version 4.1
+
+
+* Sat Apr 28 2007 Adam Williamson <awilliamson@mandriva.com> 1.0-12mdv2008.0
++ Revision: 18836
+- rebuild for new era
+
+  + Mandriva <devel@mandriva.com>
+
+
+* Fri Sep 02 2005 Camille Begnis <camille@mandriva.com> 1.0-11mdk
+- rebuild
+
+* Mon Jul 19 2004 Frederic Crozat <fcrozat@mandrakesoft.com> 1.0-10mdk
+- Fix postun script
+
+* Thu Apr 22 2004 Frederic Crozat <fcrozat@mandrakesoft.com> 1.0-9mdk
+- Fix uninstall when xmlcatalog is no longer present
+
+* Mon Jul 21 2003 Frederic Crozat <fcrozat@mandrakesoft.com> - 1.0-8mdk
+- Add some ghost/config files to package
+- Fix upgrade
+
+* Mon May 05 2003 <camille@ke.mandrakesoft.com> 1.0-7mdk
+- Rebuild
+
+* Tue Apr 02 2002 Camille Begnis <camille@mandrakesoft.com> 1.0-6mdk
+- remove crappy %% {openjadever} (thanks gc)
+
+* Thu Jan 24 2002 Camille Begnis <camille@mandrakesoft.com> 1.0-5mdk
+- use xmlcatalog from libxml-utils instead of install-catalog
+
+* Mon Jun 11 2001 Geoffrey Lee <snailtalk@mandrakesoft.com> 1.0-4mdk
+- Merge patches from Abel Cheung:
+- Simplify %%files
+- Source is not downloadable itself, it's just a re-compressed archive
+- Removed useless variable
+- Corrected file permissions
+- More macros
+- Rearrange BuildArch to bottom, no idea why source and patch refuses to be
+  removed otherwise
+
+* Tue Mar 13 2001 Camille Begnis <camille@mandrakesoft.com> 1.0-3mdk
+- Redirect install-catalog output to /dev/null
+
+* Thu Oct 19 2000 Camille Begnis <camille@mandrakesoft.com> 1.0-2mdk
+- put DTD version in %%{dtdver}
+
+* Wed Aug 23 2000 Camille Begnis <camille@mandrakesoft.com> 1.0-1mdk
+- adapt spec from Eric Bischoff <ebisch@cybercable.tm.fr>
+- Obsoletes docbook
+- Pre-LSB compliance
+
