@@ -1,5 +1,5 @@
---- docbook.cat~	2007-05-17 14:08:54.000000000 +0200
-+++ docbook.cat	2007-05-17 14:09:02.000000000 +0200
+--- ./docbook.cat~	2007-05-17 14:08:54.000000000 +0200
++++ ./docbook.cat	2007-05-17 14:09:02.000000000 +0200
 @@ -49,65 +49,5 @@
  PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.2//EN"
         "dbcentx.mod"
