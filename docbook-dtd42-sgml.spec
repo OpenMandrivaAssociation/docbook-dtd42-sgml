@@ -11,10 +11,10 @@ License:	Artistic style
 Url:		http://www.oasis-open.org/docbook/
 Source0:	http://www.oasis-open.org/docbook/sgml/4.2/docbook-4.2.tar.bz2
 Patch0:		docbook-dtd42-sgml-1.0.catalog.patch
-BuildArch:	noarch  
+BuildArch:	noarch
 
 Provides:	docbook-dtd-sgml
-Requires:	sgml-common
+Requires(post,postun):	sgml-common
 
 %description
 The DocBook Document Type Definition (DTD) describes the syntax of
@@ -37,7 +37,6 @@ install *.dtd $DESTDIR
 install *.mod $DESTDIR
 mkdir -p %{buildroot}%{_sysconfdir}/sgml
 touch %{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-touch %{buildroot}%{_sysconfdir}/sgml/catalog
 
 %post
 %{_bindir}/xmlcatalog --sgml --noout --add \
@@ -87,6 +86,5 @@ fi
 %files
 %doc README ChangeLog
 %ghost %config(noreplace) %{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-%ghost %config(noreplace) %{_sysconfdir}/sgml/catalog
 %{sgmlbase}/docbook/sgml-dtd-%{dtdver}
 
