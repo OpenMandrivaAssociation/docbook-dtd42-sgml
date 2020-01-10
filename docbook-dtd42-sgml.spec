@@ -24,7 +24,7 @@ This is the version %{dtdver} of this DTD.
 
 %prep
 %setup -q -c
-%apply_patches
+%autopatch -p1
 
 %build
 
