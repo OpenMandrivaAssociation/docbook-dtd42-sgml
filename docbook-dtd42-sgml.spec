@@ -8,7 +8,7 @@ Version:	1.0
 Release:	20
 Group:		Publishing
 License:	Artistic style
-Url:		http://www.oasis-open.org/docbook/
+Url:		https://www.oasis-open.org/docbook/
 Source0:	http://www.oasis-open.org/docbook/sgml/4.2/docbook-4.2.tar.bz2
 Patch0:		docbook-dtd42-sgml-1.0.catalog.patch
 BuildArch:	noarch
